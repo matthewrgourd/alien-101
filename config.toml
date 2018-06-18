@@ -1,0 +1,79 @@
+languageCode = "en-uk"
+title = "Visual Artist and VJ"
+baseurl = "http://example.org/"
+theme = "prologue"
+
+[params]
+  name = "Alien 101"
+  description = "Visual artist and VJ"
+  copyright = "Alien 101"
+
+[[params.social]]
+  medium = "facebook"
+  icon = "facebook"
+  link = "https://www.facebook.com/msoleramarquez"
+
+[[params.social]]
+  medium = "email"
+  icon = "envelope"
+  link = "mailto:lolisolera101@gmail.com?Subject=Enquiry"
+
+# Portfolio column one
+
+[[params.portfolio1]]
+  title = "Spastik Abducted"
+  alt = ""
+  source = "img/pic01.jpg"
+  url = "#"
+
+[[params.portfolio1]]
+  title = "Aphex Twin Alien"
+  alt = ""
+  source = "img/pic02.jpg"
+  url = "#"
+
+[[params.portfolio1]]
+  title = "Marilyn"
+  alt = ""
+  source = "img/pic03.jpg"
+  url = "#"
+
+# Portfolio column two
+
+[[params.portfolio2]]
+  title = "Escape Woman"
+  alt = ""
+  source = "img/pic04.jpg"
+  url = "#"
+
+[[params.portfolio2]]
+  title = "Kraftwerk"
+  alt = ""
+  source = "img/pic05.jpg"
+  url = "#"
+
+  [[params.portfolio2]]
+    title = "Exist"
+    alt = ""
+    source = "img/pic08.jpg"
+    url = "#"
+
+# Portfolio column 3
+
+[[params.portfolio3]]
+  title = "Tokyo"
+  alt = ""
+  source = "img/pic06.jpg"
+  url = "#"
+
+[[params.portfolio3]]
+  title = "We Are Not Alone"
+  alt = ""
+  source = "img/pic07.jpg"
+  url = "#"
+
+  [[params.portfolio3]]
+    title = "Stop Wars"
+    alt = ""
+    source = "img/pic09.jpg"
+    url = "#"

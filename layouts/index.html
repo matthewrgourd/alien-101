@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{ .Title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
+							<h1 id="title">{{ .Site.Params.name }}</h1>
+							<p>{{ .Site.Params.description }}</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+              {{ range .Site.Params.social }}
+              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+              {{ end }}
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">&nbsp;<br />
+								&nbsp;</h2>
+								<p>&nbsp;<br />
+								&nbsp;</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Find out more</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+							<header>
+								<h2>My work as a visual artist</h2>
+							</header>
+							<p>I am Alien 101. I'm a member of <a href="http://vjlondon.com/">VJ London</a> and <a href="http://www.crux-events.org/">CRUX AV</a> whose regular meet-ups I attend in London. I perform using a MacBook and VDMX software and own my own projector which I can bring to gigs if needed.
+								This year I've performed at <a href="http://www.stourspace.co.uk/10-05-2018-i-splice-festival-2018-launch-night-crux-av-link-jam-byob/">Crux - AV Link Jam</a> part of <a href="http://www.splicefestival.com/">Splice Festival</a> @ Stour Space and <a href="http://www.theelist.co.uk/event/stow-lab-trap/">Stow-Lab @ Trap</a>. The screenshots below give you a flavour of the type of content I use at gigs. My aim is to send messages to the audience that are open to interpretation depending on their feelings towards the music.</p>
+              <div class="row">
+                <div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio1 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <header>
+                      <h3>{{ .title }}</h3>
+                    </header>
+                  </article>
+                  {{ end }}
+                </div>
+
+                <div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio2 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <header>
+                      <h3>{{ .title }}</h3>
+                    </header>
+                  </article>
+                  {{ end }}
+                </div>
+
+                <div class="4u 12u$(mobile)">
+                  {{ range .Site.Params.portfolio3 }}
+                  <article class="item">
+                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                    <header>
+                      <h3>{{ .title }}</h3>
+                    </header>
+                  </article>
+                  {{ end }}
+                </div>
+              </div>
+
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="img/about.jpg" alt="Alien 101" /></a>
+
+							<p>I'm a hedonistic person curious about new technology and passionate about electronic music.<br />I love expressing my feelings for music through visual artistry.</p>
+
+							<a href="#"><img src="img/about2.jpg" alt="Alien 101" /></a>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Send me a message</h2>
+							</header>
+
+							<p>Please get in touch if you want me to work with you to transform your electronic music gigs.</p>
+
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/jquery.scrollzer.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/util.js"></script>
+			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
