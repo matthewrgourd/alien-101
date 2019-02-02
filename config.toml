@@ -10,6 +10,11 @@ publishDir = "html"
   copyright = "Alien 101"
 
 [[params.social]]
+  medium = "instagram"
+  icon = "instagram"
+  link = "https://www.instagram.com/_alien101"
+
+[[params.social]]
   medium = "facebook"
   icon = "facebook"
   link = "https://www.facebook.com/msoleramarquez"
@@ -22,14 +27,19 @@ publishDir = "html"
 # Portfolio column one
 
 [[params.portfolio1]]
-title = "Mannequin"
-alt = "Mannequin"
-source = "img/pic04.jpg"
+  title = "Alien"
+  alt = "Alien"
+  source = "img/pic05.jpg"
 
-[[params.portfolio1]]
-  title = "Tokyo"
-  alt = "Tokyo"
-  source = "img/pic06.jpg"
+  [[params.portfolio1]]
+    title = "Marilyn"
+    alt = "Marilyn"
+    source = "img/pic10.jpg"
+
+  [[params.portfolio1]]
+    title = "DJ Mona Lisa"
+    alt = "DJ Mona Lisa"
+    source = "img/pic01.jpg"
 
 # Portfolio column two
 
@@ -43,6 +53,11 @@ source = "img/pic04.jpg"
     alt = "Exist"
     source = "img/pic08.jpg"
 
+    [[params.portfolio2]]
+      title = "Tokyo"
+      alt = "Tokyo"
+      source = "img/pic06.jpg"
+
 # Portfolio column 3
 
 [[params.portfolio3 ]]
@@ -51,6 +66,11 @@ alt = "We Are Not Alone"
 source = "img/pic07.jpg"
 
 [[params.portfolio3]]
-  title = "Alien"
-  alt = "Alien"
-  source = "img/pic05.jpg"
+title = "Mannequin"
+alt = "Mannequin"
+source = "img/pic04.jpg"
+
+  [[params.portfolio3]]
+    title = "Stop Wars"
+    alt = "Stop Wars"
+    source = "img/pic09.jpg"
