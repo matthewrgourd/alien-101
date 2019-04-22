@@ -27,50 +27,50 @@ publishDir = "html"
 # Portfolio column one
 
 [[params.portfolio1]]
-  title = "Alien"
-  alt = "Alien"
-  source = "img/pic05.jpg"
+title = "Out of Space"
+alt = "Out of Space"
+  source = "img/pic09.png"
 
   [[params.portfolio1]]
-    title = "Marilyn"
-    alt = "Marilyn"
+    title = "Green Man"
+    alt = "Green Man"
     source = "img/pic10.jpg"
 
-  [[params.portfolio1]]
-    title = "DJ Mona Lisa"
-    alt = "DJ Mona Lisa"
-    source = "img/pic01.jpg"
+    [[params.portfolio1]]
+      title = "Astronauts"
+      alt = "Astronauts"
+      source = "img/pic06.jpg"
 
 # Portfolio column two
 
 [[params.portfolio2]]
-  title = "Pop Art"
-  alt = "Pop Art"
+  title = "Cosmic"
+  alt = "Cosmic"
   source = "img/pic03.jpg"
+
+  [[params.portfolio2]]
+    title = "UFO Engineer"
+    alt = "UFO Engineer"
+    source = "img/pic01.jpg"
 
   [[params.portfolio2]]
     title = "Exist"
     alt = "Exist"
     source = "img/pic08.jpg"
 
-    [[params.portfolio2]]
-      title = "Tokyo"
-      alt = "Tokyo"
-      source = "img/pic06.jpg"
-
 # Portfolio column 3
+
+  [[params.portfolio3]]
+  title = "Doll Parts"
+  alt = "Doll Parts"
+    source = "img/pic05.png"
+
+[[params.portfolio3]]
+title = "Mannequin"
+alt = "Mannequin"
+source = "img/pic04.png"
 
 [[params.portfolio3 ]]
 title = "We Are Not Alone"
 alt = "We Are Not Alone"
 source = "img/pic07.jpg"
-
-[[params.portfolio3]]
-title = "Mannequin"
-alt = "Mannequin"
-source = "img/pic04.jpg"
-
-  [[params.portfolio3]]
-    title = "Stop Wars"
-    alt = "Stop Wars"
-    source = "img/pic09.jpg"
