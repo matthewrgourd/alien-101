@@ -1553,7 +1553,7 @@
 	body {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #00000;
@@ -1878,7 +1878,7 @@
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				color: #fff;
-				background: #222729 url("images/overlay.png");
+				background: #fff url("images/overlay.png");
 			}
 
 			table.default thead {
@@ -2112,7 +2112,7 @@
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #fff;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -2148,7 +2148,7 @@
 			overflow: hidden;
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
-			text-align: center;
+			text-align: left;
 			background-image: url("images/overlay.png");
 		}
 
@@ -2182,20 +2182,20 @@
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: #fff;
 				background-image: url("../img/banner.jpg");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #fff;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #fff;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #fff;
 			}
 
 /* Wide */
@@ -2205,7 +2205,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 14pt;
 			}
 
 		/* Header */
@@ -2326,7 +2326,7 @@
 			}
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 14pt;
 			}
 
 			header br {

@@ -15,14 +15,22 @@ publishDir = "html"
   link = "https://www.instagram.com/_alien101"
 
 [[params.social]]
-  medium = "facebook"
-  icon = "facebook"
-  link = "https://www.facebook.com/msoleramarquez"
-
-[[params.social]]
   medium = "email"
   icon = "envelope"
   link = "mailto:lola@alien-101.com?Subject=Enquiry"
+
+  [[params.social]]
+    medium = "vimeo"
+    icon = "vimeo"
+    link = "https://vimeo.com/user2160487"
+
+
+[[params.social]]
+    medium = "facebook"
+    icon = "facebook"
+    link = "https://www.facebook.com/msoleramarquez"
+
+
 
 # Portfolio column one
 
@@ -61,7 +69,7 @@ alt = "Out of Space"
 # Portfolio column 3
 
   [[params.portfolio3]]
-  title = "Doll Parts"
+  title = "  Doll Parts"
   alt = "Doll Parts"
     source = "img/pic05.png"
 
