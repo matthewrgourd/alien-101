@@ -5,9 +5,9 @@ theme = "prologue"
 publishDir = "html"
 
 [params]
-  name = "Alien 101"
+  name = "Alien101"
   description = "Visual artist and VJ"
-  copyright = "Alien 101"
+  copyright = "Alien101"
 
 [[params.social]]
   medium = "instagram"
