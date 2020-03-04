@@ -37,48 +37,48 @@ publishDir = "html"
 [[params.portfolio1]]
 title = "Out of Space"
 alt = "Out of Space"
-  source = "img/pic09.png"
+  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321475/pic09_fd7led.png"
 
   [[params.portfolio1]]
     title = "Green Man"
     alt = "Green Man"
-    source = "img/pic10.jpg"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321474/pic10_wnh3tm.png"
 
     [[params.portfolio1]]
       title = "Astronauts"
       alt = "Astronauts"
-      source = "img/pic06.jpg"
+      source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321464/pic06_xibgnm.jpg"
 
 # Portfolio column two
 
 [[params.portfolio2]]
   title = "Cosmic"
   alt = "Cosmic"
-  source = "img/pic03.jpg"
+  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321464/pic03_xhyc1c.jpg"
 
   [[params.portfolio2]]
     title = "UFO Engineer"
     alt = "UFO Engineer"
-    source = "img/pic01.jpg"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321463/pic01_hcs0ix.jpg"
 
   [[params.portfolio2]]
     title = "Exist"
     alt = "Exist"
-    source = "img/pic08.jpg"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321465/pic08_fhuosh.jpg"
 
 # Portfolio column 3
 
   [[params.portfolio3]]
   title = "  Doll Parts"
   alt = "Doll Parts"
-    source = "img/pic05.png"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321473/pic05_vdsais.jpg"
 
 [[params.portfolio3]]
 title = "Mannequin"
 alt = "Mannequin"
-source = "img/pic04.png"
+source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321470/pic04_ymw9io.png"
 
 [[params.portfolio3 ]]
 title = "We Are Not Alone"
 alt = "We Are Not Alone"
-source = "img/pic07.jpg"
+source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321464/pic07_jkjgg8.jpg"
