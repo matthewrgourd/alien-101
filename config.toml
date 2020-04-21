@@ -37,7 +37,7 @@ publishDir = "html"
 [[params.portfolio1]]
 title = "Out of Space"
 alt = "Out of Space"
-  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321475/pic09_fd7led.png"
+  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1587468093/pic09_lss8sr.jpg"
 
   [[params.portfolio1]]
     title = "Green Man"
@@ -54,7 +54,7 @@ alt = "Out of Space"
 [[params.portfolio2]]
   title = "Cosmic"
   alt = "Cosmic"
-  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321464/pic03_xhyc1c.jpg"
+  source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1587468119/pic03_gea4eh.png"
 
   [[params.portfolio2]]
     title = "UFO Engineer"
@@ -64,14 +64,14 @@ alt = "Out of Space"
   [[params.portfolio2]]
     title = "Exist"
     alt = "Exist"
-    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321465/pic08_fhuosh.jpg"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1583321465/pic08_fhuosh.jpg"
 
 # Portfolio column 3
 
   [[params.portfolio3]]
   title = "  Doll Parts"
   alt = "Doll Parts"
-    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/v1583321473/pic05_vdsais.jpg"
+    source = "https://res.cloudinary.com/diy2hv1ds/image/upload/c_scale,w_326/v1583321475/pic05_pykhti.png"
 
 [[params.portfolio3]]
 title = "Mannequin"
