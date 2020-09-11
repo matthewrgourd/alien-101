@@ -175,8 +175,25 @@
 								<h2>Contact</h2>
 							</header>
 
-							<p>Like what you see? Get in touch. With Alien101's help, you'll be able to transform your electronic music gig into a truly exceptional event. Drop her a line at <a href="mailto:lola@alien-101.com">lola@alien-101.com</a>. </p>
-<img src="https://res.cloudinary.com/diy2hv1ds/image/upload/v1582055779/alien101-profile-pic_ijwuq7.png" alt="Alien101" />
+							<p>Like what you see? Get in touch. With Alien101's help, you'll be able to transform your electronic music gig into a truly exceptional event. Drop her a line and share your detailed plans via the below form:
+
+								<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+	<p>
+	<label>File upload: <input type="file" name="file" /></label>
+</p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 						</div>
 					</section>
 
