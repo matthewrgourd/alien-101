@@ -26,7 +26,6 @@ publishDir = "html"
     link = "https://www.facebook.com/msoleramarquez"
 
 
-
 # Portfolio column one
 
 [[params.portfolio1]]
@@ -64,7 +63,7 @@ alt = "Out of Space"
 # Portfolio column 3
 
   [[params.portfolio3]]
-  title = "  Doll Parts"
+  title = "Doll Parts"
   alt = "Doll Parts"
     source = "https://res.cloudinary.com/diy2hv1ds/image/upload/c_scale,w_326/v1583321475/pic05_pykhti.png"
 
