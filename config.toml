@@ -7,7 +7,7 @@ publishDir = "html"
 [params]
   name = "Alien101"
   description = "Visual artist and VJ"
-  copyright = "Alien101 2022"
+  copyright = "Alien101 2023"
 
 [[params.social]]
   medium = "instagram"
