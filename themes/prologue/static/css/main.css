@@ -2205,7 +2205,7 @@
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 14pt;
+				font-size: 16pt;
 			}
 
 		/* Header */
@@ -2233,6 +2233,10 @@
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 
 		/* Main */
+
+		body, input, textarea, select {
+			font-size: 16pt;
+		}
 
 			#main > section {
 				padding: 3em 0;
