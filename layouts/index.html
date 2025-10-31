@@ -34,7 +34,7 @@
 		<link rel="stylesheet" href="/css/optimizations.css" />
 		<style>
 			/* Critical CSS for font loading */
-			@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 			/* Improve image loading with aspect ratio boxes */
 			.image.fit img {
@@ -94,7 +94,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="https://res.cloudinary.com/diy2hv1ds/image/upload/e_grayscale/v1587468247/avatar_ugmyw1.jpg" alt="{{ .Site.Params.name }} avatar" loading="lazy" /></span>
 							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<p>{{ .Site.Params.description }}</p>
+							<p>{{ .Site.Params.description | safeHTML }}</p>
 						</div>
 
 					<!-- Nav -->

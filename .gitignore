@@ -46,3 +46,8 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Documentation files
+IMPROVEMENTS.md
+CONTENT_REWRITE.md
+COLOR_IMPROVEMENTS.md

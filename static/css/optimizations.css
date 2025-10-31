@@ -4,12 +4,286 @@
 :root {
     --primary-color: #5e42a6;
     --accent-color: #b74e91;
-    --text-dark: #444;
-    --text-light: #999;
+    --text-dark: #1a1a1a;
+    --text-medium: #2d2d2d;
+    --text-light: #666;
     --bg-light: #f5f5f5;
+    --bg-dark: #1a1d20;
+    --link-color: #c84e6d;
+    --link-hover: #e27689;
     --transition-speed: 0.3s;
     --shadow-subtle: 0 2px 8px rgba(0,0,0,0.1);
     --shadow-hover: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* HIGH CONTRAST COLOR IMPROVEMENTS */
+
+/* Improve body text contrast and font - Playful artist style */
+body {
+    color: var(--text-dark);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Improve paragraph text readability - Playful artist style */
+p {
+    color: #000 !important;
+    line-height: 1.5;
+    font-weight: 400 !important;
+    font-size: 1.0625rem !important;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Improve heading contrast - Playful artist style */
+h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    font-weight: 700 !important;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Improve link visibility and contrast */
+a {
+    color: var(--link-color) !important;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(200, 78, 109, 0.3);
+}
+
+a:hover {
+    color: var(--link-hover) !important;
+    border-bottom-color: var(--link-hover);
+}
+
+/* Header/sidebar improvements */
+#header {
+    background: var(--bg-dark) !important;
+}
+
+#header #logo h1 {
+    color: #fff !important;
+    font-weight: 700;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+#header #logo p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.75em;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Navigation link improvements - Playful artist style */
+#nav a {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+#nav a:hover,
+#nav a.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#nav a span {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Button text readability improvements - Playful artist style */
+.button {
+    color: #fff !important;
+    font-weight: 700 !important;
+    background-color: #6d1a32 !important;
+    background-image: none !important;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+.button:hover {
+    color: #fff !important;
+    background-color: #4d1224 !important;
+}
+
+/* Section backgrounds for better contrast */
+section.one {
+    background-color: #fff;
+}
+
+section.two {
+    background-color: #f8f8f8;
+}
+
+section.three {
+    background-color: #fff;
+}
+
+section.four {
+    background-color: #f8f8f8;
+}
+
+/* Dark section text improvements */
+section.dark {
+    color: #fff !important;
+}
+
+section.dark h2,
+section.dark h3,
+section.dark p {
+    color: #fff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark section button styles removed to restore original */
+
+/* Portfolio item text improvements */
+.item h3 {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* Form element improvements */
+input[type="text"],
+input[type="email"],
+textarea {
+    color: var(--text-dark) !important;
+    background: #fff;
+    border: 2px solid #ddd;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--link-color);
+    color: var(--text-dark) !important;
+}
+
+label {
+    color: var(--text-medium) !important;
+    font-weight: 600;
+}
+
+/* Social icons contrast */
+.icons a {
+    color: rgba(255, 255, 255, 0.75) !important;
+    background: rgba(255, 255, 255, 0.1);
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icons a:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer improvements */
+#footer {
+    background: var(--bg-dark);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .copyright {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Improve text over images */
+.cover header h2 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Accessibility: ensure minimum contrast ratios */
+/* WCAG AA requires 4.5:1 for normal text, 3:1 for large text */
+
+/* Override default text colors for better readability - Playful artist style */
+#main section p,
+#main section li {
+    color: #000 !important;
+    font-weight: 400 !important;
+    font-size: 1.0625rem !important;
+    line-height: 1.5;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Ensure links in content are visible */
+#main section a {
+    color: var(--link-color) !important;
+    font-weight: 500;
+}
+
+/* Improve code/pre blocks if any */
+code, pre {
+    background: #f4f4f4;
+    color: var(--text-dark);
+    border: 1px solid #ddd;
+}
+
+/* Blockquote improvements */
+blockquote {
+    border-left: 4px solid var(--link-color);
+    color: var(--text-medium);
+}
+
+/* List improvements */
+ul li, ol li {
+    color: #000 !important;
+}
+
+/* Table improvements if any */
+table th {
+    color: var(--text-dark);
+    font-weight: 600;
+    background: #f8f8f8;
+}
+
+table td {
+    color: var(--text-medium);
+}
+
+/* Improve contrast for the cover section overlay */
+#top.cover {
+    position: relative;
+}
+
+#top.cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#top.cover .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Ensure proper text contrast on darker sections */
+section.dark,
+section.cover {
+    position: relative;
+}
+
+section.dark::after,
+section.cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 0;
+}
+
+section.dark .container,
+section.cover .container {
+    position: relative;
+    z-index: 1;
 }
 
 /* Modern font loading with fallback */
@@ -82,30 +356,7 @@ textarea:focus {
     transform: scale(1.05);
 }
 
-/* Modern button styles */
-.button {
-    position: relative;
-    overflow: hidden;
-    transition: all var(--transition-speed) ease;
-}
-
-.button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255,255,255,0.3);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
-}
-
-.button:hover::before {
-    width: 300px;
-    height: 300px;
-}
+/* Button animation styles removed to restore original */
 
 /* Navigation improvements */
 #nav a {

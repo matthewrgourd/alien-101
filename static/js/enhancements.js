@@ -108,21 +108,9 @@
         });
     }
 
-    // Add smooth button hover effects
+    // Button enhancements removed to restore original styling
     function enhanceButtons() {
-        const buttons = document.querySelectorAll('.button, button');
-
-        buttons.forEach(button => {
-            button.style.transition = 'all 0.3s ease';
-
-            button.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.05)';
-            });
-
-            button.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1)';
-            });
-        });
+        // Function disabled
     }
 
     // Performance: Reduce motion for users who prefer it
