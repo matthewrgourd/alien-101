@@ -4,10 +4,49 @@ baseurl = "http://www.alien-101.com/"
 theme = "prologue"
 publishDir = "html"
 
+# Minification and optimization settings
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableXML = false
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = false
+      precision = 2
+    [minify.tdewolff.html]
+      keepComments = false
+      keepDefaultAttrVals = false
+      keepDocumentTags = true
+      keepEndTags = true
+      keepQuotes = false
+      keepWhitespace = false
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 2
+
+# Output formats for better caching
+[caches]
+  [caches.assets]
+    dir = ":resourceDir/_gen"
+    maxAge = "24h"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+  [caches.images]
+    dir = ":resourceDir/_gen"
+    maxAge = "24h"
+
 [params]
   name = "Alien101"
   description = "Visual artist and VJ"
-  copyright = "Matt Gourd 2023"
+  copyright = "Matt Gourd 2025"
 
 [[params.social]]
   medium = "instagram"

@@ -1,0 +1,272 @@
+/* Modern CSS optimizations and improvements for Alien101 site */
+
+/* CSS Variables for easier theming and consistency */
+:root {
+    --primary-color: #5e42a6;
+    --accent-color: #b74e91;
+    --text-dark: #444;
+    --text-light: #999;
+    --bg-light: #f5f5f5;
+    --transition-speed: 0.3s;
+    --shadow-subtle: 0 2px 8px rgba(0,0,0,0.1);
+    --shadow-hover: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Modern font loading with fallback */
+@supports (font-display: swap) {
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-display: swap;
+    }
+}
+
+/* Smooth scrolling for modern browsers */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Improved image loading performance */
+img {
+    content-visibility: auto;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+img[loading="lazy"].loaded,
+img[loading="lazy"]:not([src]) {
+    opacity: 1;
+}
+
+/* Better focus indicators for accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Portfolio item enhancements */
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.item img {
+    transition: transform var(--transition-speed) ease, filter var(--transition-speed) ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+/* Modern button styles */
+.button {
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Navigation improvements */
+#nav a {
+    position: relative;
+    transition: all var(--transition-speed) ease;
+}
+
+#nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width var(--transition-speed) ease;
+}
+
+#nav a:hover::after,
+#nav a.active::after {
+    width: 100%;
+}
+
+/* Section animations */
+section {
+    will-change: opacity, transform;
+}
+
+/* Video embed container improvements */
+iframe {
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+}
+
+/* Form enhancements */
+form input,
+form textarea {
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(94, 66, 166, 0.1);
+}
+
+form button[type="submit"] {
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+form button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Social icons hover effects */
+.icons a {
+    transition: all var(--transition-speed) ease;
+}
+
+.icons a:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Performance: Use contain for isolated elements */
+#header {
+    contain: layout style;
+}
+
+.item {
+    contain: layout paint;
+}
+
+/* Dark mode support (if user prefers) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here if desired */
+}
+
+/* Loading optimization for above-the-fold content */
+.header,
+#top {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+}
+
+/* Improve text rendering */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Responsive image improvements */
+.image.fit {
+    position: relative;
+    overflow: hidden;
+}
+
+.image.fit img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Add subtle animations to headers */
+h1, h2, h3 {
+    transition: color var(--transition-speed) ease;
+}
+
+/* Improve link hover states */
+a {
+    transition: color var(--transition-speed) ease, border-bottom-color var(--transition-speed) ease;
+}
+
+/* Add loading skeleton for images (optional) */
+@keyframes shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.image-loading {
+    background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+}
+
+/* WebP background image support */
+.webp .section-bg {
+    background-image: url('/img/banner.webp');
+}
+
+.no-webp .section-bg {
+    background-image: url('/img/banner.png');
+}
+
+/* Optimize paint performance */
+* {
+    box-sizing: border-box;
+}
+
+/* Add visual feedback for clickable items */
+.item,
+.button,
+a {
+    -webkit-tap-highlight-color: rgba(94, 66, 166, 0.2);
+}
+
+/* Improve contrast for better accessibility */
+.label {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Add GPU acceleration to animated elements */
+.item,
+.button,
+#nav a {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
