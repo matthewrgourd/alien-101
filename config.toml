@@ -45,7 +45,7 @@ publishDir = "html"
 
 [params]
   name = "Alien101"
-  description = "Visual artist and VJ"
+  description = "Making weird visuals for electronic music"
   copyright = "Matt Gourd 2025"
 
 [[params.social]]
